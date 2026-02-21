@@ -1,4 +1,4 @@
-# 💰 Finanças Overview — Obsidian Plugin
+# 💰 Personal Finance — Obsidian Plugin
 
 Track and visualize your monthly finances directly in Obsidian — summary cards, daily balance chart, monthly evolution, and spending by category, all powered by a simple CSV file.
 
@@ -28,21 +28,21 @@ The plugin reads a CSV file with the following columns (column names are case-in
 | `category` | ✅ | `Food` |
 | `sub-category` | — | `Groceries` |
 | `description` | — | `Weekly shopping` |
-| `amount` | ✅ | `R$9,120.00` or `-200.00` |
+| `amount` | ✅ | `$9,120.00` or `-$200.00` |
 | `accumulated-value` | — | ignored by the plugin |
 
 - **Dates** must be in `YYYY-MM-DD` format
 - **Positive values** = income; **negative values** = expenses
-- Currency prefix (`R$`) and thousand separators are handled automatically
+- Currency prefix (`$`) and thousand separators are handled automatically
 - Empty rows or rows without a valid date are silently ignored
 
 **Minimal example:**
 
 ```csv
 date,category,sub-category,description,amount,accumulated-value
-2025-01-05,Salary,,January salary,R$9120.00,R$9120.00
-2025-01-10,Food,Groceries,Weekly shopping,-R$350.00,R$8770.00
-2025-01-15,Transport,Fuel,Gas station,-R$200.00,R$8570.00
+2025-01-05,Salary,,January salary,$9120.00,$9120.00
+2025-01-10,Food,Groceries,Weekly shopping,-$350.00,$8770.00
+2025-01-15,Transport,Fuel,Gas station,-$200.00,$8570.00
 ```
 
 ---
@@ -75,7 +75,7 @@ The default path is `personal-finance.csv` (vault root).
 
 ## 📸 Screenshots
 
-> *(add screenshots here after the first release)*
+![screenshot personal finance](https://github.com/LBerts/personal-finance/blob/main/screenshot%20personal%20finance.png?raw=true)
 
 ---
 
